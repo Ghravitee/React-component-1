@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  --ff-primary: 'Overpass', sans-serif;
+
+  --spacer: 3rem;
+  --fs-400: .8125rem;
+  --fs-600: .9625rem;
+
+  --br: 1rem;
+}
+
+
+
+
+/* For box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Removes default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* List elements */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/*  root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Default styles for elements that do not have a class*/
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Global styling for images*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+      scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+  }
+}
+
+ul {
+  padding-left: 0;
+}
+
+.wrapper {
+  background-color: var(--Very-Dark-Blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-primary);
+}
+
+.container {
+  padding: 2rem 2.5rem 2.5rem;
+  background-color: var(--Dark-Blue);
+  border-radius: var(--br);
+}
+
+.feedback-container {
+  padding: 2.5rem 1.5rem;
+  background-color: var(--Dark-Blue);
+  border-radius: var(--br);
+  width: 25rem;
+}
+
+.heading, .feedback-heading {
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-c {
+  text-align: center;
+}
+
+
+.paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 20rem;
+  color: var(--Light-Grey);
+  margin-bottom: 1.5rem;
+}
+
+
+.feedback-paragraph {
+  color: var(--Orange);
+  padding: .5rem;
+  font-weight: 400;
+  border-radius: 2rem;
+  background-color: hsl(213, 19%, 23%);
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 1.5rem;
+ 
+}
+
+.paragraph-2a {
+  color: var(--Light-Grey);
+  text-align: center;
+}
+
+.star,
+.click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50%;
+}
+
+.star {
+  margin-bottom: 1rem;
+}
+
+.feedback-star {
+  margin-bottom: 2rem;
+}
+
+.star-img {
+  height: .9rem;
+  width: .9rem;
+}
+
+.illustration-img {
+  margin: 0 auto;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+.submit {
+  text-decoration: none;
+  background-color: var(--Orange);
+  padding: .8rem 8rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.submit:hover {
+  cursor: pointer;
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.click {
+  color: var(--Light-Grey);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.click:hover {
+  cursor: pointer;
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+
+.clicked {
+  background-color: var(--Orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: var(--White);
+  font-weight: 700;
+}
