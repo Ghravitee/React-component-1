@@ -228,12 +228,12 @@ ul {
 
 .click:hover {
   cursor: pointer;
-  background-color: var(--Medium-Grey);
+  background-color: var(--Orange);
   color: var(--White);
 }
 
 .clicked {
-  background-color: var(--Orange);
+  background-color: var(--Medium-Grey);
   display: flex;
   justify-content: center;
   align-items: center;
