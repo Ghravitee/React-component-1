@@ -41,7 +41,8 @@ function App() {
 
   return (
 
-    <div className='wrapper'>
+    <body>
+
       {
         redirect ?
           <div className="container">
@@ -63,7 +64,7 @@ function App() {
           />
 
       }
-    </div>
+    </body>
 
   )
 }

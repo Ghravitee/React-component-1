@@ -104,10 +104,10 @@ ul {
   padding-left: 0;
 }
 
-.wrapper {
+body {
   background-color: var(--Very-Dark-Blue);
   min-height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   font-family: var(--ff-primary);
@@ -117,19 +117,22 @@ ul {
   padding: 2rem 2rem 2.5rem;
   background-color: var(--Dark-Blue);
   border-radius: var(--br);
+  display: grid;
+  max-width: 25rem;
+
 }
 
 .feedback-container {
   padding: 2.5rem 1.5rem;
   background-color: var(--Dark-Blue);
   border-radius: var(--br);
-  width: 25rem;
+  max-width: 25rem;
 }
 
 .heading,
 .feedback-heading {
   color: var(--White);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -142,7 +145,6 @@ ul {
 .paragraph {
   font-size: .95rem;
   font-weight: 400;
-  max-width: 21rem;
   color: var(--Light-Grey);
   margin-bottom: 1.5rem;
 }
@@ -177,7 +179,7 @@ ul {
 }
 
 .star {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .feedback-star {
@@ -197,8 +199,8 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
-  max-width: 21rem;
+  margin-bottom: 2.8rem;
+ 
 }
 
 .submit {
@@ -237,9 +239,20 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   color: var(--White);
   font-weight: 700;
 }
+
+/* @media only screen and (max-width: 425px){
+  .container {
+    padding: 2rem 2rem 2.5rem;
+    background-color: var(--Dark-Blue);
+    border-radius: var(--br);
+    display: grid;
+    max-width: 17rem;
+  
+  }
+} */
