@@ -179,7 +179,7 @@ body {
 }
 
 .star {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .feedback-star {
@@ -206,7 +206,7 @@ body {
 .submit {
   text-decoration: none;
   background-color: var(--Orange);
-  padding: .8rem 8rem;
+  padding: .7rem 8rem;
   border-radius: 2rem;
   font-weight: 700;
   width: 100%;
