@@ -132,7 +132,7 @@ body {
 .heading,
 .feedback-heading {
   color: var(--White);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .star {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .feedback-star {
@@ -199,7 +199,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.5rem;
  
 }
 
